@@ -1,0 +1,11 @@
+from pathlib import Path
+
+# combines all files in 'files to combine' folder outputs new file to most used key counter
+
+file_name = str(input('Enter name for combined file: '))
+
+file = open(f'{file_name}.txt', 'w')
+for i in Path('files to combine\\.').iterdir():
+    if i.is_file():
+        file.write(i.read_text())
+file.close()
