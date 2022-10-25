@@ -28,27 +28,28 @@ mostUsedCharactersCounter('Example Name of Characters', example_array)
 
 ```
 SYMBOLS
-" occured 271 times at 37.38%
-, occured 88 times at 12.14%
-} occured 46 times at 6.34%
-{ occured 46 times at 6.34%
-) occured 23 times at 3.17%
-( occured 23 times at 3.17%
-_ occured 19 times at 2.62%
-\ occured 13 times at 1.79%
-# occured 10 times at 1.38%
-- occured 5 times at 0.69%
-+ occured 3 times at 0.41%
-? occured 1 times at 0.14%
+" occured 271 times at 49.72%
+, occured 88 times at 16.15%
+} occured 46 times at 8.44%
+{ occured 46 times at 8.44%
+_ occured 19 times at 3.49%
+' occured 15 times at 2.75%
+= occured 15 times at 2.75%
+. occured 14 times at 2.57%
+\ occured 13 times at 2.39%
+# occured 10 times at 1.83%
+- occured 5 times at 0.92%
++ occured 3 times at 0.55%
 
 
 NUMBERS
-0 occured 49 times at 75.38%
-1 occured 5 times at 7.69%
-2 occured 4 times at 6.15%
-9 occured 1 times at 1.54%
-8 occured 1 times at 1.54%
-7 occured 1 times at 1.54%
+0 occured 38 times at 61.29%
+1 occured 16 times at 25.81%
+2 occured 4 times at 6.45%
+9 occured 1 times at 1.61%
+8 occured 1 times at 1.61%
+7 occured 1 times at 1.61%
+6 occured 1 times at 1.61%
 ```
 
 ### Extra
