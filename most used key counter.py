@@ -5,6 +5,9 @@
 # and add another, or edit an existing 2D array following this format [{"character": "&", "count": 0}], then call
 # mostUsedCharactersCounter("char group name", array) passing in a string with a name of the character group and a 2D array
 
+from audioop import reverse
+
+
 file_path = "file combiner output.txt"
 
 symbols_array = [
@@ -68,8 +71,7 @@ def mostUsedCharactersCounter(character_group_name, array):
                     total_ammount += 1
 
     # sorts array by count and reverses order to highest-lowest
-    array.sort(key=lambda item: item.get("count"))
-    array.reverse()
+    array.sort(key=lambda item: item.get("count"), reverse=True)
 
     print(f"\n\n{character_group_name}")
 
@@ -82,6 +84,6 @@ def mostUsedCharactersCounter(character_group_name, array):
     file.close()
 
 
-# these are an example u can delete these and use your own 
+# these are an example u can delete these and use your own
 mostUsedCharactersCounter("SYMBOLS", symbols_array)
 mostUsedCharactersCounter("NUMBERS", numbers_array)
