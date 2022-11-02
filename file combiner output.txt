@@ -9,7 +9,7 @@ for i in Path('files to combine\\.').iterdir():
     if i.is_file():
         file.write(i.read_text())
 file.close()
-# most used character couter takes a file and counts how many times all special and number characters occur
+# most used character counter takes a file and counts how many times all special and number characters occur
 # the special characters and numbers are counted separately giving each both their own percentage out of 100
 
 # this can be used for whatever characters you want to check just specify the path of the file u want to check in file_path
@@ -70,13 +70,13 @@ def mostUsedCharactersCounter(character_group_name, array):
     file = open(file_path, "r")
 
     # loop to count occurrences of characters in a file
-    total_ammount = 0
+    total_amount = 0
     for line in file:
         for char in line:
             for item in array:
                 if item["character"] == char:
                     item["count"] += 1
-                    total_ammount += 1
+                    total_amount += 1
 
     # sorts array by count and reverses order to highest-lowest
     array.sort(key=lambda item: item.get("count"))
@@ -87,9 +87,9 @@ def mostUsedCharactersCounter(character_group_name, array):
     # calculates a percentage and prints a message if item is greater than 0
     for item in array:
         if item["count"] != 0:
-            percent = (item["count"]/total_ammount)*100
+            percent = (item["count"]/total_amount)*100
             print(
-                f'{item["character"]} occured {item["count"]} times at {percent:.2f}%')
+                f'{item["character"]} occurred {item["count"]} times at {percent:.2f}%')
     print("\n")
     file.close()
 
