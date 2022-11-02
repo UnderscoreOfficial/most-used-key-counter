@@ -5,8 +5,6 @@
 # and add another, or edit an existing 2D array following this format [{"character": "&", "count": 0}], then call
 # mostUsedCharactersCounter("char group name", array) passing in a string with a name of the character group and a 2D array
 
-from audioop import reverse
-
 
 file_path = "file combiner output.txt"
 
